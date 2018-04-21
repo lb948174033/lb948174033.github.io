@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.gzx97.top">
-  <title>用亚马逊服务器免费搭建SS | 公子笑的主站</title>
+  <title>Windows系统的优化 | 公子笑的主站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一个腼腆喜爱IT的青年，目前正学习前端、JAVA、Python、Android">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -24,35 +24,32 @@
         border-left-color: #1087ca;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="一.前言 因为大天朝的一些限制，所以科学上网是很多人都需要的，像我之前在Android平台时可以用许多科学上网的软件（网速是硬伤），但是换到了IOS平台显然这些开源化的福利就享受不到了（越狱不说），这时购买VPS搭建自己的海外服务器就比较靠谱，从经济的角度考虑，购买VPS尽量从免费的入手，首推AWS（Amazon Web Services），只要注册成功会送12个月的免费服务器。  二.注册AW">
-<meta name="keywords" content="记录,教程,科学上网">
+  <meta name="description" content="前言 本篇文章记录一下Windows系统的优化，其中很多都是在各个论坛的技术贴上所Get到的，这些对电脑优化的技术教程都是我自己亲自实践有用所收藏的精华，点滴记录汇成此博。至今也不记得这些优化教程的具体出处了，所以也就不列举了，只能说前人栽树后人乘凉吧…   整理如下：  Windows系统的精简 禁用多余服务及关闭磁盘碎片整理计划 设置windows启动参数软件自启动 取消不必要的计划任务及磁">
+<meta name="keywords" content="记录,教程,Windows">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用亚马逊服务器免费搭建SS">
-<meta property="og:url" content="http://www.gzx97.top/2018/03/12/用亚马逊服务器免费搭建SS/index.html">
+<meta property="og:title" content="Windows系统的优化">
+<meta property="og:url" content="http://www.gzx97.top/posts/23934/index.html">
 <meta property="og:site_name" content="公子笑的主站">
-<meta property="og:description" content="一.前言 因为大天朝的一些限制，所以科学上网是很多人都需要的，像我之前在Android平台时可以用许多科学上网的软件（网速是硬伤），但是换到了IOS平台显然这些开源化的福利就享受不到了（越狱不说），这时购买VPS搭建自己的海外服务器就比较靠谱，从经济的角度考虑，购买VPS尽量从免费的入手，首推AWS（Amazon Web Services），只要注册成功会送12个月的免费服务器。  二.注册AW">
+<meta property="og:description" content="前言 本篇文章记录一下Windows系统的优化，其中很多都是在各个论坛的技术贴上所Get到的，这些对电脑优化的技术教程都是我自己亲自实践有用所收藏的精华，点滴记录汇成此博。至今也不记得这些优化教程的具体出处了，所以也就不列举了，只能说前人栽树后人乘凉吧…   整理如下：  Windows系统的精简 禁用多余服务及关闭磁盘碎片整理计划 设置windows启动参数软件自启动 取消不必要的计划任务及磁">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpa7gerzu8j30jw08974n.jpg">
-<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/0068Se8Tgy1fpa9n3zu1gj30pf0aqq2y.jpg">
-<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/0068Se8Tgy1fpa9vts2eij316y0m7q5q.jpg">
-<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0068Se8Tgy1fpa9yqqi9fj30l904dweh.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpaa0nov52j31a70k5gom.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpaa3sr2sjj31700kpgnj.jpg">
-<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0068Se8Tgy1fpaa5np8nnj316t0kfmxy.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpaa9t6ppkj316q0f475c.jpg">
-<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/0068Se8Tgy1fpaafnhym7j30zt0icwg5.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpaahwwmc3j30xw07q3z3.jpg">
-<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/0068Se8Tgy1fpaahwfzbzj30xs0c3tae.jpg">
-<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0068Se8Tgy1fpaal348c4j311q0bp3z0.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpaasal1bdj30hz0hadgg.jpg">
-<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/0068Se8Tgy1fpaaw1w7rsj30hp0hcjs7.jpg">
-<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/0068Se8Tgy1fpab06cakij30h50h60tj.jpg">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpab1vqkojj30gp0aomxd.jpg">
-<meta property="og:updated_time" content="2018-04-04T04:01:08.412Z">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0068Se8Tly1fnweucfauaj31hc0u0465.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tly1fnxbab3idnj30kp0hjgm4.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/0068Se8Tly1fnxbn2q3dzj30d30gmgm2.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tly1fnxbwqjudlj30ji0fpgma.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0068Se8Tly1fnxc1pk9efj30b406nglp.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tly1fnxc6gu2w3j30ih0dpaaf.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/0068Se8Tly1fnxc6he4lwj30ic0dnq3g.jpg">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tly1fnxcib6km6j30if0gmaav.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/0068Se8Tly1fnxcefxgsjj30rc0hewgq.jpg">
+<meta property="og:image" content="http://wx4.sinaimg.cn/mw690/0068Se8Tly1fnxco5usm9j30c30hct9e.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0068Se8Tly1fnxejixlhdj30d00g8dg1.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0068Se8Tly1fnxkoryhfwj30cs0g5q32.jpg">
+<meta property="og:image" content="http://wx1.sinaimg.cn/mw690/0068Se8Tly1fnxl9zc2s7j30r30ddq3g.jpg">
+<meta property="og:updated_time" content="2018-04-21T08:01:31.555Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="用亚马逊服务器免费搭建SS">
-<meta name="twitter:description" content="一.前言 因为大天朝的一些限制，所以科学上网是很多人都需要的，像我之前在Android平台时可以用许多科学上网的软件（网速是硬伤），但是换到了IOS平台显然这些开源化的福利就享受不到了（越狱不说），这时购买VPS搭建自己的海外服务器就比较靠谱，从经济的角度考虑，购买VPS尽量从免费的入手，首推AWS（Amazon Web Services），只要注册成功会送12个月的免费服务器。  二.注册AW">
-<meta name="twitter:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpa7gerzu8j30jw08974n.jpg">
+<meta name="twitter:title" content="Windows系统的优化">
+<meta name="twitter:description" content="前言 本篇文章记录一下Windows系统的优化，其中很多都是在各个论坛的技术贴上所Get到的，这些对电脑优化的技术教程都是我自己亲自实践有用所收藏的精华，点滴记录汇成此博。至今也不记得这些优化教程的具体出处了，所以也就不列举了，只能说前人栽树后人乘凉吧…   整理如下：  Windows系统的精简 禁用多余服务及关闭磁盘碎片整理计划 设置windows启动参数软件自启动 取消不必要的计划任务及磁">
+<meta name="twitter:image" content="http://wx1.sinaimg.cn/mw690/0068Se8Tly1fnweucfauaj31hc0u0465.jpg">
   
     <link rel="alternative" href="/atom.xml" title="公子笑的主站" type="application/atom+xml">
   
@@ -198,11 +195,11 @@ $(function() {
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/archives">全部文章</a></li>
+				<li><a href="/archives">文章</a></li>
 	        
-				<li><a href="/movies">我的动漫</a></li>
+				<li><a href="/movies">动漫</a></li>
 	        
-				<li><a href="/photos/">相册|视频</a></li>
+				<li><a href="/photos/">相册</a></li>
 	        
 			</ul>
 		</nav>
@@ -212,8 +209,6 @@ $(function() {
     			<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">文章搜索</a>
     			
             
-    			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
     			
             
     			
@@ -284,11 +279,11 @@ $(function() {
 				
 					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/archives">全部文章</a></li>
+					<li style="width: 25%"><a href="/archives">文章</a></li>
 		        
-					<li style="width: 25%"><a href="/movies">我的动漫</a></li>
+					<li style="width: 25%"><a href="/movies">动漫</a></li>
 		        
-					<li style="width: 25%"><a href="/photos/">相册|视频</a></li>
+					<li style="width: 25%"><a href="/photos/">相册</a></li>
 		        
 				</ul>
 			</nav>
@@ -303,20 +298,20 @@ $(function() {
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-用亚马逊服务器免费搭建SS" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Windows系统的优化" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      用亚马逊服务器免费搭建SS
+      Windows系统的优化
     </h1>
   
 
         
-        <a href="/2018/03/12/用亚马逊服务器免费搭建SS/" class="archive-article-date">
-  	<time datetime="2018-03-12T10:11:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-12 | 全文字数：1,127</time>
+        <a href="/posts/23934/" class="archive-article-date">
+  	<time datetime="2018-01-28T08:37:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-28 | 全文字数：2,140</time>
 </a>
         
       </header>
@@ -330,7 +325,7 @@ $(function() {
   <div id="toc-article" class="toc-article">
       <span id="toc-close" class="toc-close" title="隐藏导航" onclick="showBtn();">×</span>
     <strong class="toc-title">文章目录</strong>
-           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-前言"><span class="toc-number">1.</span> <span class="toc-text">一.前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-注册AWS"><span class="toc-number">2.</span> <span class="toc-text">二.注册AWS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-创建亚马逊服务器"><span class="toc-number">3.</span> <span class="toc-text">三.创建亚马逊服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-XShell登录亚马逊EC2云服务器"><span class="toc-number">4.</span> <span class="toc-text">四.XShell登录亚马逊EC2云服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-安装并配置Shadowsocks"><span class="toc-number">5.</span> <span class="toc-text">五.安装并配置Shadowsocks</span></a></li></ol>
+           <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一-Windows系统的精简"><span class="toc-number">2.</span> <span class="toc-text">一.Windows系统的精简</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-禁用多余服务及关闭磁盘碎片整理计划"><span class="toc-number">3.</span> <span class="toc-text">二.禁用多余服务及关闭磁盘碎片整理计划</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-禁用多余服务"><span class="toc-number">3.1.</span> <span class="toc-text">1.禁用多余服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-关闭磁盘碎片整理计划"><span class="toc-number">3.2.</span> <span class="toc-text">2.关闭磁盘碎片整理计划</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-设置windows启动参数软件自启动"><span class="toc-number">4.</span> <span class="toc-text">三.设置windows启动参数软件自启动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-取消不必要的计划任务及磁盘清理"><span class="toc-number">5.</span> <span class="toc-text">四.取消不必要的计划任务及磁盘清理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-取消不必要的计划任务"><span class="toc-number">5.1.</span> <span class="toc-text">1.取消不必要的计划任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-磁盘清理"><span class="toc-number">5.2.</span> <span class="toc-text">2.磁盘清理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-显卡优化windows设置"><span class="toc-number">6.</span> <span class="toc-text">五.显卡优化windows设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六-CPU优化winodws设置"><span class="toc-number">7.</span> <span class="toc-text">六.CPU优化winodws设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#七-网速优化windows设置"><span class="toc-number">8.</span> <span class="toc-text">七.网速优化windows设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-修改注册表"><span class="toc-number">8.1.</span> <span class="toc-text">1.修改注册表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-修改本地组策略编辑器"><span class="toc-number">8.2.</span> <span class="toc-text">2.修改本地组策略编辑器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-运行dos命令"><span class="toc-number">8.3.</span> <span class="toc-text">3.运行dos命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#八-其他设置"><span class="toc-number">9.</span> <span class="toc-text">八.其他设置</span></a></li></ol>
          </div>
    <script type="text/javascript">
   function showToc(){
@@ -350,147 +345,106 @@ $(function() {
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpa7gerzu8j30jw08974n.jpg" alt="zhuyetu"></p>
-<h2 id="一-前言"><a href="#一-前言" class="headerlink" title="一.前言"></a>一.前言</h2><blockquote>
-<p>因为大天朝的一些限制，所以科学上网是很多人都需要的，像我之前在Android平台时可以用许多科学上网的软件（网速是硬伤），但是换到了IOS平台显然这些开源化的福利就享受不到了（越狱不说），这时购买VPS搭建自己的海外服务器就比较靠谱，从经济的角度考虑，购买VPS尽量从免费的入手，首推AWS（Amazon Web Services），只要注册成功会送12个月的免费服务器。</p>
+        <p><img src="http://wx1.sinaimg.cn/mw690/0068Se8Tly1fnweucfauaj31hc0u0465.jpg" alt="zhuyetu"></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>本篇文章记录一下Windows系统的优化，其中很多都是在各个论坛的技术贴上所Get到的，这些对电脑优化的技术教程都是我自己亲自实践有用所收藏的精华，点滴记录汇成此博。至今也不记得这些优化教程的具体出处了，所以也就不列举了，只能说前人栽树后人乘凉吧…</p>
 </blockquote>
-<h2 id="二-注册AWS"><a href="#二-注册AWS" class="headerlink" title="二.注册AWS"></a>二.注册AWS</h2><ul>
-<li><font size="3">打开<a href="https://amazonaws-china.com/cn/" target="_blank" rel="noopener">亚马逊服务器</a>的官方网站，点击创建免费账户，这些注册过程倒也没什么好说的，其中注册的时候要用到信用卡，直接到淘宝买一张信用卡账号就行（卡号16位，价格大概8.8元左右吧），持卡人姓名是可以匿名的，也就是随便填姓名。</font>
-
+<ul>
+<li><font size="3">整理如下：</font><blockquote>
+<ul>
+<li>Windows系统的精简</li>
+<li>禁用多余服务及关闭磁盘碎片整理计划</li>
+<li>设置windows启动参数软件自启动</li>
+<li>取消不必要的计划任务及磁盘清理</li>
+<li>显卡优化windows设置</li>
+<li>CPU优化winodws设置</li>
+<li>网速优化windows设置</li>
+<li>其他设置</li>
+</ul>
+</blockquote>
 </li>
 </ul>
+<hr>
 <a id="more"></a> 
+<h2 id="一-Windows系统的精简"><a href="#一-Windows系统的精简" class="headerlink" title="一.Windows系统的精简"></a>一.Windows系统的精简</h2><ul>
+<li><font size="3">Windows的精简很重要，当一台计算机没有那些冗余的软件跟插件的时候，自然也就能最大程度发挥它的实力。</font></li>
+<li><p><font size="3">如果当你还没有装好系统的时候，这个时候你可以不用考虑那些msdn或者微软的官网的镜像去装系统，你可以到网上找一个精简好的Windows镜像文件去安装就可以了，这里有整理好的几套镜像，大部分都是在吾爱论坛淘到的，具体作者是谁也不记得了</font></p>
+<blockquote>
 <ul>
-<li><font size="3">这个信用卡验证是有几率失败的，我在淘宝上分别买了两张信用卡，第一张失败了，左改信息右改信息都没用，然后重新购买第二张信用卡就通过审核了。如果审核失败，重新购买信用卡，建议账号也重新注册一下，这样过审成功率高一些。出现下面这个图或者注册的时候提示支付信息错误，基本上等于失败了，他给你发邮件要你提供什么单子，这些信息淘宝买的虚拟信用卡都是没有提供的。</font>
+<li><a href="https://pan.baidu.com/s/1bq5TQUV" target="_blank" rel="noopener">Windows10（1703）精简版：</a> 密码: t2ku</li>
+<li><a href="https://pan.baidu.com/s/1dHdFJ8H" target="_blank" rel="noopener">俄罗斯大神精简的Windows7版：</a> 密码: n82r</li>
+<li><a href="https://pan.baidu.com/s/1kW8vyuj" target="_blank" rel="noopener">Windows7 SP1旗舰精简版：</a> 密码: h9hy</li>
+<li><a href="https://pan.baidu.com/s/1jJRur8i" target="_blank" rel="noopener">Windows7（64位）其他精简版：</a> 密码: n7sa</li>
+</ul>
+</blockquote>
+</li>
+<li><p><font size="3">如果你已经装好系统，那么你所需要的肯定已经不再是精简镜像了，而是需要精简掉那些你不需要的软件的方法，我这里不会去具体强调哪些Windows软件卸载，对于强迫症来说无疑全部卸载才是王道，因为这始终是一个使用习惯问题，所以授之于鱼不如授之于渔，精简哪些还是让大家自己决定吧。<br>管理员权限打开<code>windows powershell</code></font></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//卸载命令</span><br><span class="line">Get-AppxPackage *ZuneMusic* | Remove-AppxPackage</span><br><span class="line"></span><br><span class="line">//加载所有app</span><br><span class="line">Get-AppxPackage -AllUsers</span><br><span class="line"></span><br><span class="line">//得到所有的PackageFullName，可卸载PackageFullName</span><br><span class="line">get-appxpackage -alluser | findstr "PackageFullName"</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tly1fnxbab3idnj30kp0hjgm4.jpg" alt="windows powershell"></p>
+<h2 id="二-禁用多余服务及关闭磁盘碎片整理计划"><a href="#二-禁用多余服务及关闭磁盘碎片整理计划" class="headerlink" title="二.禁用多余服务及关闭磁盘碎片整理计划"></a>二.禁用多余服务及关闭磁盘碎片整理计划</h2><h3 id="1-禁用多余服务"><a href="#1-禁用多余服务" class="headerlink" title="1.禁用多余服务"></a>1.禁用多余服务</h3><ul>
+<li><font size="3">电脑计算机之所以有的时候越用越卡就是因为那些多余服务占用了你电脑的使用，这些服务有些是微软自带的，有些是安装第三方软件产生的，软件千千万，是不可能讲的完的，所以这里就以微软自带的服务举例子。</font></li>
+<li><font size="3">打开<code>控制面板–管理工具–服务</code></font><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">//微软搜索</span><br><span class="line">Windows Search 禁用</span><br><span class="line"></span><br><span class="line">//微软家庭组</span><br><span class="line">HomeGroup Listener和HomeGroup Provider 设置禁用</span><br><span class="line"></span><br><span class="line">//安全中心</span><br><span class="line">SecurityCenter 设置禁用</span><br><span class="line"></span><br><span class="line">//微软升级</span><br><span class="line">Windows Update 设置禁用</span><br><span class="line"></span><br><span class="line">//内存管理机制</span><br><span class="line">Superfetch -启动类型–自动（延迟启动）</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><img src="http://wx4.sinaimg.cn/mw690/0068Se8Tly1fnxbn2q3dzj30d30gmgm2.jpg" alt="Superfetch"></p>
+<h3 id="2-关闭磁盘碎片整理计划"><a href="#2-关闭磁盘碎片整理计划" class="headerlink" title="2.关闭磁盘碎片整理计划"></a>2.关闭磁盘碎片整理计划</h3><ul>
+<li><font size="3">如果不是固态硬盘，那么是没必要关闭磁盘碎片整理计划的，因为磁盘碎片整理，就是通过系统软件或者专业的磁盘碎片整理软件对电脑磁盘在长期使用过程中产生的碎片和凌乱文件重新整理，可提高电脑的整体性能和运行速度。但是如果是固态硬盘，固态硬盘的闪存存储特性决定了其擦写次数是有限的，一旦超过擦写限额，磁盘将无法写入成为废盘。固态硬盘进行磁盘碎片整理是加速硬盘报废。</font></li>
+<li><font size="3">打开<code>我的电脑</code>，右键<code>磁盘C</code>-<code>属性</code>–<code>工具</code>–<code>对驱动器进行优化和碎片整理</code>–<code>优化</code>–<code>更改设置</code>–<code>取消选择按计划</code>运行</font><br><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tly1fnxbwqjudlj30ji0fpgma.jpg" alt="磁盘碎片整理计划"></li>
+</ul>
+<h2 id="三-设置windows启动参数软件自启动"><a href="#三-设置windows启动参数软件自启动" class="headerlink" title="三.设置windows启动参数软件自启动"></a>三.设置windows启动参数软件自启动</h2><ul>
+<li><font size="3">如果不是uefi启动引导，那就没必要修改“引导”了，修改一下“启动”就行</font></li>
+<li><p><font size="3"><code>Win+R</code>打开<code>运行</code>，或者右键左下角开始键，再点<code>运行</code>，输入<code>MSCONFIG</code>，如图：</font><br><img src="http://wx1.sinaimg.cn/mw690/0068Se8Tly1fnxc1pk9efj30b406nglp.jpg" alt="MSCONFIG"></p>
+</li>
+<li><p><font size="3">打开第一个选项卡“常规”，勾选有选择的启动，去掉使用原有引导配置，如图：</font><br><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tly1fnxc6gu2w3j30ih0dpaaf.jpg" alt="常规"></p>
+</li>
+<li><p><font size="3">打开第二个选项卡“引导”，勾选无GUI引导，超时改为3秒，如图：</font><br><img src="http://wx2.sinaimg.cn/mw690/0068Se8Tly1fnxc6he4lwj30ic0dnq3g.jpg" alt="引导"></p>
+</li>
+<li><p><font size="3">打开第四个选项卡“启动”，打开任务管理器，关闭那些自启动的软件，如图：</font><br><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tly1fnxcib6km6j30if0gmaav.jpg" alt="启动"></p>
+</li>
+</ul>
+<h2 id="四-取消不必要的计划任务及磁盘清理"><a href="#四-取消不必要的计划任务及磁盘清理" class="headerlink" title="四.取消不必要的计划任务及磁盘清理"></a>四.取消不必要的计划任务及磁盘清理</h2><h3 id="1-取消不必要的计划任务"><a href="#1-取消不必要的计划任务" class="headerlink" title="1.取消不必要的计划任务"></a>1.取消不必要的计划任务</h3><ul>
+<li><font size="3">有些人以为将软件自启禁用就万事大吉了，但是有些软件它会自动创建启动计划，所以还是有必要将其禁用的</font></li>
+<li><font size="3">右键开始菜单图标或<code>Win+X</code>，点击<code>计算机管理</code>，进入<code>任务和计划程序</code>，再进入<code>任务计划程序库</code>，右键点击需要关闭的计划任务，选择<code>禁用</code>即可，如图</font><br><img src="http://wx2.sinaimg.cn/mw690/0068Se8Tly1fnxcefxgsjj30rc0hewgq.jpg" alt="取消不必要的计划任务"></li>
+</ul>
+<h3 id="2-磁盘清理"><a href="#2-磁盘清理" class="headerlink" title="2.磁盘清理"></a>2.磁盘清理</h3><ul>
+<li><font size="3">一些简单的清理其实根本没必要去使用第三方软件，windows本身就有清理功能</font></li>
+<li><font size="3">打开<code>我的电脑</code>，右键<code>磁盘C</code>-<code>属性</code>–<code>常规</code>–<code>磁盘清理</code>–<code>清理系统文件</code>–这里全部勾选一下，如果有备份，就别勾选备份了，最后<code>确定</code>，如图：</font><br><img src="http://wx4.sinaimg.cn/mw690/0068Se8Tly1fnxco5usm9j30c30hct9e.jpg" alt="磁盘清理"></li>
+</ul>
+<h2 id="五-显卡优化windows设置"><a href="#五-显卡优化windows设置" class="headerlink" title="五.显卡优化windows设置"></a>五.显卡优化windows设置</h2><ul>
+<li><font size="3">这个显卡优化设置来自我看B站蓝视星空所Get到的</font></li>
+<li><font size="3">找到<code>性能监视器</code>（管理权限打开，Windows管理工具里面），打开<code>数据收集器集</code>-<code>用户定义</code>，空白处右键新建<code>数据收集器集</code>，手动创建，<code>名称：GPU</code>，勾选<code>性能计数器</code>和<code>系统配置信息</code>，添加，打开<code>RemoteFX Graphics</code>，找到<code>Frame Quality</code>添加进去，找到<code>Graphics Compression ratio</code>添加进去，找到<code>Output Frames/Second</code>添加进去，然后一直下一步，直到到是否创建数据收集器集，选择打开该数据收集器集的属性，完成。添加<code>关键字：gpu</code>、自己显卡的名字（设备管理器可以看到自己显卡的名字）和2，停止条件，勾选总持续时间，并改为3秒，应用，确定，然后会有两个文件，一个性能计数器，一个配置，右键性能计数器属性，示例间隔改为144，最大示例打钩，改为288，确定，并重启</font><br><img src="http://wx1.sinaimg.cn/mw690/0068Se8Tly1fnxejixlhdj30d00g8dg1.jpg" alt="显卡优化"></li>
+</ul>
+<h2 id="六-CPU优化winodws设置"><a href="#六-CPU优化winodws设置" class="headerlink" title="六.CPU优化winodws设置"></a>六.CPU优化winodws设置</h2><ul>
+<li><font size="3">这个CPU优化设置来自我看B站蓝视星空所Get到的</font></li>
+<li><font size="3">首先看一下自己cpu的线程数，1.修改系统配置，运行-<code>MSCONFIG</code>，<code>引导</code>-<code>高级选项</code>，勾选<code>处理器个数</code>，及选择你的<code>最大线程数目</code>，<br>确定。2.打开<code>性能监视器</code>（管理权限打开，Windows管理工具里面），打开<code>数据收集器集</code>-<code>用户定义</code>，空白处右键新建<code>数据收集器集</code>，手动创建，<code>名称：CPU</code>，勾选<code>性能计数器</code>，添加，找到<code>Processor</code>，浏览对象的实例选择最大线程数减一的那个值添加进去，打开<code>Process</code>，找到<code>Thread Count</code>添加进去，确定，然后重启。</font><br><img src="http://wx1.sinaimg.cn/mw690/0068Se8Tly1fnxkoryhfwj30cs0g5q32.jpg" alt="CPU优化"></li>
+</ul>
+<h2 id="七-网速优化windows设置"><a href="#七-网速优化windows设置" class="headerlink" title="七.网速优化windows设置"></a>七.网速优化windows设置</h2><ul>
+<li><font size="3">这个网速优化设置来自我看B站蓝视星空所Get到的</font>
 
 </li>
 </ul>
-<p><img src="http://wx2.sinaimg.cn/mw690/0068Se8Tgy1fpa9n3zu1gj30pf0aqq2y.jpg" alt="yanzheng"></p>
-<h2 id="三-创建亚马逊服务器"><a href="#三-创建亚马逊服务器" class="headerlink" title="三.创建亚马逊服务器"></a>三.创建亚马逊服务器</h2><ul>
-<li><font size="3">创建好后账号后，打开AWS管理控制台，点击EC2，并创建启动实例，如图</font>
+<h3 id="1-修改注册表"><a href="#1-修改注册表" class="headerlink" title="1.修改注册表"></a>1.修改注册表</h3><ul>
+<li><font size="3"><code>运行</code>-<code>RegEdit</code>，依次打开：</font><blockquote>
+<p>HKEY_LOCAL_MACHINE-Software-Microsoft-Windows-CurrentVersion</p>
+</blockquote>
+</li>
+<li><font size="3">空白处右键新建一个32位的<code>DWORD</code>值，重命名为：<code>MaxConnectionPerServer</code>，数值修改16<br>再空白处右键新建一个32位的DWORD值，重命名为：<code>MaxConnectionPer1_0Server</code>，数值修改16</font>
 
 </li>
 </ul>
-<p><img src="http://wx2.sinaimg.cn/mw690/0068Se8Tgy1fpa9vts2eij316y0m7q5q.jpg" alt="EC2"></p>
-<p><img src="http://wx1.sinaimg.cn/mw690/0068Se8Tgy1fpa9yqqi9fj30l904dweh.jpg" alt="实例"></p>
-<ul>
-<li><font size="3">接着选择Ubuntu系统映像，如图</font>
+<h3 id="2-修改本地组策略编辑器"><a href="#2-修改本地组策略编辑器" class="headerlink" title="2.修改本地组策略编辑器"></a>2.修改本地组策略编辑器</h3><ul>
+<li><font size="3"><code>运行</code>-<code>gpEdit.msc</code>，<code>计算器配置</code>-<code>管理模板</code>-<code>网络</code>-<code>QoS数据包计划程序</code>，<code>禁用限制可保留宽带</code>，然后再上一个设置，<code>限制未完成数据包</code>，启用，数据包数量改为最大，40000000000</font>
 
 </li>
 </ul>
-<p><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpaa0nov52j31a70k5gom.jpg" alt="ubuntu"></p>
-<ul>
-<li><font size="3">然后一直下一步，一直到第五步的<code>添加标签</code></font>
-
+<h3 id="3-运行dos命令"><a href="#3-运行dos命令" class="headerlink" title="3.运行dos命令"></a>3.运行dos命令</h3><ul>
+<li><font size="3"><code>运行</code>-<code>cmd</code>(管理员权限)，输入下面代码，出现确定，重启即可</font><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netsh interface tcp set global autotuning = disabled</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<p><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpaa3sr2sjj31700kpgnj.jpg" alt="ami"></p>
-<p><img src="http://wx1.sinaimg.cn/mw690/0068Se8Tgy1fpaa5np8nnj316t0kfmxy.jpg" alt="biaoqian"></p>
-<ul>
-<li><font size="3">密钥填你的Name随便你改不改，后面的值填一下你的密码，然后继续下一步，到<code>配置安全组</code>，点击添加规则，配置所有流量和端口开放，然后下一步，启动</font>
-
-</li>
-</ul>
-<p><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpaa9t6ppkj316q0f475c.jpg" alt="anquanzu"></p>
-<ul>
-<li><font size="3">创建新的密钥，下载下来，然后设置，并连接实例</font>
-
-</li>
-</ul>
-<p><img src="http://wx2.sinaimg.cn/mw690/0068Se8Tgy1fpaafnhym7j30zt0icwg5.jpg" alt="miyao"></p>
-<p><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpaahwwmc3j30xw07q3z3.jpg" alt="tongzhi"></p>
-<p><img src="http://wx2.sinaimg.cn/mw690/0068Se8Tgy1fpaahwfzbzj30xs0c3tae.jpg" alt="tongzhi2"></p>
-<p><img src="http://wx1.sinaimg.cn/mw690/0068Se8Tgy1fpaal348c4j311q0bp3z0.jpg" alt="lianjie"></p>
-<h2 id="四-XShell登录亚马逊EC2云服务器"><a href="#四-XShell登录亚马逊EC2云服务器" class="headerlink" title="四.XShell登录亚马逊EC2云服务器"></a>四.XShell登录亚马逊EC2云服务器</h2><ul>
-<li><font size="3">百度下载一个Xshell工具，随便安到哪里，路径不一定c盘</font></li>
-<li><font size="3">打开XShell，选择<code>工具</code>菜单项，选择<code>用户密码管理者</code>，打开<code>用户密钥</code>界面，选择<code>导入</code>，导入之前下载好的PEM密钥文件</font>
-
-</li>
-</ul>
-<p><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpaasal1bdj30hz0hadgg.jpg" alt="XShell"></p>
-<ul>
-<li><font size="3">选择<code>文件</code>菜单下的<code>新建</code>项，我们开始新建一个到云服务器的会话连接，在左侧列表框中选择<code>连接</code>，在右侧界面中输入会话名称和主机IP，端口可以不用改，名称随意</font>
-
-</li>
-</ul>
-<p><img src="http://wx2.sinaimg.cn/mw690/0068Se8Tgy1fpaaw1w7rsj30hp0hcjs7.jpg" alt="XShell2"></p>
-<ul>
-<li><font size="3">在左侧列表框中选择<code>用户身份验证</code>，修改右侧界面：<code>方法</code>项的值改成<code>Public Key</code>，<code>用户名</code>那里填写ubuntu，否则会出现 所选的用户密钥未在远程主机上注册 请再试一次，<code>用户密钥</code>项的值是下拉框中选择前面说的导入的PEM文件，点击<code>确定</code>按钮，完成设置。</font>
-
-</li>
-</ul>
-<p><img src="http://wx4.sinaimg.cn/mw690/0068Se8Tgy1fpab06cakij30h50h60tj.jpg" alt="XShell3"></p>
-<ul>
-<li><font size="3">最后打开并连接就可以了</font>
-
-</li>
-</ul>
-<p><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fpab1vqkojj30gp0aomxd.jpg" alt="XShell4"></p>
-<h2 id="五-安装并配置Shadowsocks"><a href="#五-安装并配置Shadowsocks" class="headerlink" title="五.安装并配置Shadowsocks"></a>五.安装并配置Shadowsocks</h2><ul>
-<li><p><font size="3">安装Shadowsocks</font></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">// 获取root权限</span><br><span class="line">sudo -s</span><br><span class="line"></span><br><span class="line">// 更新apt-get</span><br><span class="line">apt-get update</span><br><span class="line"></span><br><span class="line">// 安装python包管理工具</span><br><span class="line">apt-get install python-setuptools</span><br><span class="line">apt-get install python-pip</span><br><span class="line"></span><br><span class="line">// 安装shadowsocks</span><br><span class="line">pip install shadowsocks</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><font size="3">配置Shadowsocks</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /etc/shadowsocks</span><br><span class="line">vim /etc/shadowsocks/ss.json</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><font size="3">配置文件内容，退出按键盘的<code>esc</code>键退出，<code>shift</code>键，然后再输入wq，保存并退出</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;server&quot;:&quot;0.0.0.0&quot;,</span><br><span class="line">    &quot;server_port&quot;:443,</span><br><span class="line">    &quot;local_address&quot;:&quot;127.0.0.1&quot;,</span><br><span class="line">    &quot;local_port&quot;:1080,</span><br><span class="line">    &quot;password&quot;:&quot;密码&quot;,</span><br><span class="line">    &quot;timeout&quot;:300,</span><br><span class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;,</span><br><span class="line">    &quot;fast_open&quot;:false,</span><br><span class="line">    &quot;workers&quot;: 1</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>配置字段</th>
-<th style="text-align:center">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>server</td>
-<td style="text-align:center">服务端监听地址(IPv4或IPv6)</td>
-</tr>
-<tr>
-<td>server_port</td>
-<td style="text-align:center">服务端端口，一般为443</td>
-</tr>
-<tr>
-<td>local_address</td>
-<td style="text-align:center">本地监听地址，缺省为127.0.0.1</td>
-</tr>
-<tr>
-<td>local_port</td>
-<td style="text-align:center">本地监听端口，一般为1080</td>
-</tr>
-<tr>
-<td>password</td>
-<td style="text-align:center">用以加密的密匙</td>
-</tr>
-<tr>
-<td>timeout</td>
-<td style="text-align:center">超时时间（秒）</td>
-</tr>
-<tr>
-<td>method</td>
-<td style="text-align:center">加密方法，默认为aes-256-cfb，更多请查阅<a href="https://github.com/shadowsocks/shadowsocks/wiki/Encryption" target="_blank" rel="noopener">Encryption</a></td>
-</tr>
-<tr>
-<td>fast_open</td>
-<td style="text-align:center">是否启用<a href="https://github.com/shadowsocks/shadowsocks/wiki/TCP-Fast-Open" target="_blank" rel="noopener">TCP-Fast-Open</a>，true或者false</td>
-</tr>
-<tr>
-<td>workers</td>
-<td style="text-align:center"><a href="https://github.com/shadowsocks/shadowsocks/wiki/Workers" target="_blank" rel="noopener">worker数量</a></td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li><p><font size="3">启动Shadowsocks</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">// 启动</span><br><span class="line">ssserver -c /etc/shadowsocks/ss.json -d start </span><br><span class="line">// 停止</span><br><span class="line">ssserver -c /etc/shadowsocks/ss.json -d stop </span><br><span class="line">// 重启</span><br><span class="line">ssserver -c /etc/shadowsocks/ss.json -d restart</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><font size="3">设置SS为开机自启动</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// 编辑rc.local</span><br><span class="line">vi /etc/rc.local</span><br><span class="line">// 加入</span><br><span class="line">sudo ssserver -c /etc/shadowsocks/ss.json -d start</span><br></pre></td></tr></table></figure>
-</li>
-<li><font size="3">到这里就结束了，最后只要你用手机或者电脑连接SS就可以啦，</font></li>
+<h2 id="八-其他设置"><a href="#八-其他设置" class="headerlink" title="八.其他设置"></a>八.其他设置</h2><ul>
+<li><font size="3">其实做完了以上的优化，基本上windows系统的优化已经好了，作为用户似乎所能做到的已经到了极限，但其实不然，大牛们似乎总有新的黑科技能对系统进行优化，所以这里推荐使用<code>Dism++</code>这款第三方优化设置软件，里面还有具体很多的个性化设置或是服务禁用等，至于其他管家或者安全中心之类的软件，说实话，安了还不如不安。当然智者见智，仁者见仁，这些使用习惯没什么好去争论的。</font><br><img src="http://wx1.sinaimg.cn/mw690/0068Se8Tly1fnxl9zc2s7j30r30ddq3g.jpg" alt="Dism++"></li>
 </ul>
 
 		<hr/>
@@ -547,7 +501,7 @@ $(function() {
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">科学上网</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Windows</a>
         		</li>
       		
 		</ul>
@@ -603,7 +557,7 @@ $(function() {
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://www.gzx97.top/2018/03/12/用亚马逊服务器免费搭建SS/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://www.gzx97.top/posts/23934/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -613,25 +567,25 @@ $(function() {
     </div>
   </div>
   	<div>
-      <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束，<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+      <div style="text-align:center;color: #ccc;font-size:14px;">----------- 本文结束，<i class="fa fa-paw"></i>感谢您的阅读 -----------</div>
 	</div>
 </article>
 
   
 <nav id="article-nav">
   
-    <a href="/2018/03/15/将Hexo博客部署至Coding/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/37441/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          将Hexo博客部署至Coding
+          春至未至（一）
         
       </div>
     </a>
   
   
-    <a href="/2018/03/07/春至未至（二）/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">春至未至（二）</div>
+    <a href="/posts/20223/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo博客Yilia主题修改记录</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -658,7 +612,7 @@ $(function() {
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一-前言"><span class="toc-number">1.</span> <span class="toc-text">一.前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-注册AWS"><span class="toc-number">2.</span> <span class="toc-text">二.注册AWS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-创建亚马逊服务器"><span class="toc-number">3.</span> <span class="toc-text">三.创建亚马逊服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-XShell登录亚马逊EC2云服务器"><span class="toc-number">4.</span> <span class="toc-text">四.XShell登录亚马逊EC2云服务器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-安装并配置Shadowsocks"><span class="toc-number">5.</span> <span class="toc-text">五.安装并配置Shadowsocks</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#一-Windows系统的精简"><span class="toc-number">2.</span> <span class="toc-text">一.Windows系统的精简</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二-禁用多余服务及关闭磁盘碎片整理计划"><span class="toc-number">3.</span> <span class="toc-text">二.禁用多余服务及关闭磁盘碎片整理计划</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-禁用多余服务"><span class="toc-number">3.1.</span> <span class="toc-text">1.禁用多余服务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-关闭磁盘碎片整理计划"><span class="toc-number">3.2.</span> <span class="toc-text">2.关闭磁盘碎片整理计划</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三-设置windows启动参数软件自启动"><span class="toc-number">4.</span> <span class="toc-text">三.设置windows启动参数软件自启动</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#四-取消不必要的计划任务及磁盘清理"><span class="toc-number">5.</span> <span class="toc-text">四.取消不必要的计划任务及磁盘清理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-取消不必要的计划任务"><span class="toc-number">5.1.</span> <span class="toc-text">1.取消不必要的计划任务</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-磁盘清理"><span class="toc-number">5.2.</span> <span class="toc-text">2.磁盘清理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#五-显卡优化windows设置"><span class="toc-number">6.</span> <span class="toc-text">五.显卡优化windows设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#六-CPU优化winodws设置"><span class="toc-number">7.</span> <span class="toc-text">六.CPU优化winodws设置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#七-网速优化windows设置"><span class="toc-number">8.</span> <span class="toc-text">七.网速优化windows设置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-修改注册表"><span class="toc-number">8.1.</span> <span class="toc-text">1.修改注册表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-修改本地组策略编辑器"><span class="toc-number">8.2.</span> <span class="toc-text">2.修改本地组策略编辑器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-运行dos命令"><span class="toc-number">8.3.</span> <span class="toc-text">3.运行dos命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#八-其他设置"><span class="toc-number">9.</span> <span class="toc-text">八.其他设置</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -669,25 +623,6 @@ $(function() {
 
 
 
-
-<!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC8zMjA3OS84NjQz" style="margin:30px;margin-top:10px;padding-left:2%;padding-right:2%;background-color:#ffffff;">
-<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-
-       if (typeof LivereTower === 'function') { return; }
-
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-</script>
-<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-</div>
-<!-- City版安装代码已完成 -->
 
 
   
@@ -708,15 +643,14 @@ $(function() {
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&clubs; 2018 公子笑
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站点击量:<span id="busuanzi_value_site_uv"></span>
         <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
           <div class="powered-by">
 </span>
 </div>
     	</div>
       	<div class="footer-right">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
-  本站点击量:<span id="busuanzi_value_site_uv"></span>
 <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
       </div>
     </div>
@@ -755,8 +689,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
     
       
-      
-      
     
       
       
@@ -768,15 +700,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">文章搜索</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">文章搜索</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -867,18 +797,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     	</section>
     
 
-    
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://enterz.top/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>Enterz的博客</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
     
 
     
