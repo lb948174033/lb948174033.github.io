@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://www.gzx97.top">
-  <title>Hexo中插入使用Echarts动态图表 | 公子笑的主站</title>
+  <title>公子笑的主站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一个腼腆喜爱IT的青年，目前正学习前端、JAVA、Python、Android">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -24,20 +24,13 @@
         border-left-color: #1087ca;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="前言 ECharts，一个用较少的代码实现比较酷炫的动态数据统计表的图标库。">
-<meta name="keywords" content="记录,教程,Hexo博客">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo中插入使用Echarts动态图表">
-<meta property="og:url" content="http://www.gzx97.top/posts/54640/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="公子笑的主站">
+<meta property="og:url" content="http://www.gzx97.top/page/2/index.html">
 <meta property="og:site_name" content="公子笑的主站">
-<meta property="og:description" content="前言 ECharts，一个用较少的代码实现比较酷炫的动态数据统计表的图标库。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fq1kbbge2wj30cq05ktb3.jpg">
-<meta property="og:updated_time" content="2018-04-26T16:30:03.943Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo中插入使用Echarts动态图表">
-<meta name="twitter:description" content="前言 ECharts，一个用较少的代码实现比较酷炫的动态数据统计表的图标库。">
-<meta name="twitter:image" content="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fq1kbbge2wj30cq05ktb3.jpg">
+<meta name="twitter:title" content="公子笑的主站">
   
     <link rel="alternative" href="/atom.xml" title="公子笑的主站" type="application/atom+xml">
   
@@ -286,20 +279,22 @@ $(function() {
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Hexo驱动博客中使用Echarts动态图表" class="article article-type-post " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      Hexo中插入使用Echarts动态图表
+    <h1 itemprop="name">
+      <a class="article-title" href="/posts/16107/">Hello World</a>
     </h1>
   
 
         
-        <a href="/posts/54640/" class="archive-article-date">
-  	<time datetime="2018-04-04T09:13:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-04 | 全文字数：536</time>
+        <a href="/posts/16107/" class="archive-article-date">
+  	<time datetime="2017-11-29T07:06:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-29 | 全文字数：586</time>
 </a>
         
       </header>
@@ -309,159 +304,17 @@ $(function() {
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="http://wx3.sinaimg.cn/mw690/0068Se8Tgy1fq1kbbge2wj30cq05ktb3.jpg" alt="zhuyetu"></p>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><ul>
-<li><font size="3"><a href="http://echarts.baidu.com/" target="_blank" rel="noopener">ECharts</a>，一个用较少的代码实现比较酷炫的动态数据统计表的图标库。</font>
+        <p><img src="http://wx2.sinaimg.cn/mw690/0068Se8Tly1fnt0tjtlsyj30dw0833zb.jpg" alt="zhuyetu"></p>
+<h3 id="记博客网站搭建好的一篇独白"><a href="#记博客网站搭建好的一篇独白" class="headerlink" title="记博客网站搭建好的一篇独白"></a>记博客网站搭建好的一篇独白</h3><ul>
+<li><font size="3">因为每个码农在接触一门新的计算机语言的时候都会写一个：Hello World，所以我留下了这样一篇敷衍的：Hello World概述，只希望自己在以后的做事学习过程中能持之以恒，不忘初心！</font>
 
 </li>
 </ul>
-<a id="more"></a> 
-<blockquote>
-<p>表格上的按钮是可以点击进行交互的。</p>
-</blockquote>
-<div id="echarts9466" style="width: 81%;height: 400px;margin: 0 auto"></div>
-<script type="text/javascript">
-        // 基于准备好的dom，初始化echarts实例
-        var myChart = echarts.init(document.getElementById('echarts9466'));
-
-        // 指定图表的配置项和数据
-        var option = {
-tooltip : {
-        trigger: 'axis',
-        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
-            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
-        }
-    },
-    legend: {
-        data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎','百度']
-    },
-    grid: {
-        left: '3%',
-        right: '4%',
-        bottom: '3%',
-        containLabel: true
-    },
-    xAxis : [
-        {
-            type : 'category',
-            data : ['周一','周二','周三','周四','周五','周六','周日']
-        }
-    ],
-    yAxis : [
-        {
-            type : 'value'
-        }
-    ],
-    series : [
-        {
-            name:'直接访问',
-            type:'bar',
-            data:[320, 332, 301, 334, 390, 330, 320]
-        },
-        {
-            name:'邮件营销',
-            type:'bar',
-            stack: '广告',
-            data:[120, 132, 101, 134, 90, 230, 210]
-        },
-        {
-            name:'联盟广告',
-            type:'bar',
-            stack: '广告',
-            data:[220, 182, 191, 234, 290, 330, 310]
-        },
-        {
-            name:'视频广告',
-            type:'bar',
-            stack: '广告',
-            data:[150, 232, 201, 154, 190, 330, 410]
-        },
-        {
-            name:'搜索引擎',
-            type:'bar',
-            data:[862, 1018, 964, 1026, 1679, 1600, 1570],
-            markLine : {
-                lineStyle: {
-                    normal: {
-                        type: 'dashed'
-                    }
-                },
-                data : [
-                    [{type : 'min'}, {type : 'max'}]
-                ]
-            }
-        },
-        {
-            name:'百度',
-            type:'bar',
-            barWidth : 5,
-            stack: '搜索引擎',
-            data:[620, 732, 701, 734, 1090, 1130, 1120]
-        },
-    ]
-};
-
-        // 使用刚指定的配置项和数据显示图表。
-        myChart.setOption(option);
-</script>
-<h2 id="安装ECharts"><a href="#安装ECharts" class="headerlink" title="安装ECharts"></a>安装ECharts</h2><ul>
-<li><p><font size="3">在博客站点目录下执行：</font></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-echarts --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><font size="3">在所用主题目录下<code>layout\_partial</code>中的<code>head.ejs</code>里加入：</font></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"http://echarts.baidu.com/dist/echarts.common.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><font size="3">或者直接到<a href="http://echarts.baidu.com/download.html" target="_blank" rel="noopener">ECharts下载页面</a>里面去下下载js文件放在<code>js目录</code>下并在<code>head.ejs</code>里加入：</font></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span> <span class="attr">src</span>=<span class="string">"/js/echarts.min.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p><font size="3">最后直接在文章中引入echarts，复制option部分，形成下面这个样式就可以了</font></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% echarts <span class="number">400</span> <span class="string">'85%'</span> %&#125;</span><br><span class="line">\\TODO option goes here</span><br><span class="line">&#123;% endecharts %&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><font size="3">下面这段是前面图表的代码：</font></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line">&#123;% echarts <span class="number">400</span> <span class="string">'81%'</span> %&#125;</span><br><span class="line">&#123;</span><br><span class="line">tooltip : &#123;</span><br><span class="line">        trigger: <span class="string">'axis'</span>,</span><br><span class="line">        axisPointer : &#123;            <span class="comment">// 坐标轴指示器，坐标轴触发有效</span></span><br><span class="line">            type : <span class="string">'shadow'</span>        <span class="comment">// 默认为直线，可选为：'line' | 'shadow'</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    legend: &#123;</span><br><span class="line">        data:[<span class="string">'直接访问'</span>,<span class="string">'邮件营销'</span>,<span class="string">'联盟广告'</span>,<span class="string">'视频广告'</span>,<span class="string">'搜索引擎'</span>,<span class="string">'百度'</span>]</span><br><span class="line">    &#125;,</span><br><span class="line">    grid: &#123;</span><br><span class="line">        left: <span class="string">'3%'</span>,</span><br><span class="line">        right: <span class="string">'4%'</span>,</span><br><span class="line">        bottom: <span class="string">'3%'</span>,</span><br><span class="line">        containLabel: <span class="literal">true</span></span><br><span class="line">    &#125;,</span><br><span class="line">    xAxis : [</span><br><span class="line">        &#123;</span><br><span class="line">            type : <span class="string">'category'</span>,</span><br><span class="line">            data : [<span class="string">'周一'</span>,<span class="string">'周二'</span>,<span class="string">'周三'</span>,<span class="string">'周四'</span>,<span class="string">'周五'</span>,<span class="string">'周六'</span>,<span class="string">'周日'</span>]</span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    yAxis : [</span><br><span class="line">        &#123;</span><br><span class="line">            type : <span class="string">'value'</span></span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    series : [</span><br><span class="line">        &#123;</span><br><span class="line">            name:<span class="string">'直接访问'</span>,</span><br><span class="line">            type:<span class="string">'bar'</span>,</span><br><span class="line">            data:[<span class="number">320</span>, <span class="number">332</span>, <span class="number">301</span>, <span class="number">334</span>, <span class="number">390</span>, <span class="number">330</span>, <span class="number">320</span>]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            name:<span class="string">'邮件营销'</span>,</span><br><span class="line">            type:<span class="string">'bar'</span>,</span><br><span class="line">            stack: <span class="string">'广告'</span>,</span><br><span class="line">            data:[<span class="number">120</span>, <span class="number">132</span>, <span class="number">101</span>, <span class="number">134</span>, <span class="number">90</span>, <span class="number">230</span>, <span class="number">210</span>]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            name:<span class="string">'联盟广告'</span>,</span><br><span class="line">            type:<span class="string">'bar'</span>,</span><br><span class="line">            stack: <span class="string">'广告'</span>,</span><br><span class="line">            data:[<span class="number">220</span>, <span class="number">182</span>, <span class="number">191</span>, <span class="number">234</span>, <span class="number">290</span>, <span class="number">330</span>, <span class="number">310</span>]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            name:<span class="string">'视频广告'</span>,</span><br><span class="line">            type:<span class="string">'bar'</span>,</span><br><span class="line">            stack: <span class="string">'广告'</span>,</span><br><span class="line">            data:[<span class="number">150</span>, <span class="number">232</span>, <span class="number">201</span>, <span class="number">154</span>, <span class="number">190</span>, <span class="number">330</span>, <span class="number">410</span>]</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            name:<span class="string">'搜索引擎'</span>,</span><br><span class="line">            type:<span class="string">'bar'</span>,</span><br><span class="line">            data:[<span class="number">862</span>, <span class="number">1018</span>, <span class="number">964</span>, <span class="number">1026</span>, <span class="number">1679</span>, <span class="number">1600</span>, <span class="number">1570</span>],</span><br><span class="line">            markLine : &#123;</span><br><span class="line">                lineStyle: &#123;</span><br><span class="line">                    normal: &#123;</span><br><span class="line">                        type: <span class="string">'dashed'</span></span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;,</span><br><span class="line">                data : [</span><br><span class="line">                    [&#123;<span class="attr">type</span> : <span class="string">'min'</span>&#125;, &#123;<span class="attr">type</span> : <span class="string">'max'</span>&#125;]</span><br><span class="line">                ]</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            name:<span class="string">'百度'</span>,</span><br><span class="line">            type:<span class="string">'bar'</span>,</span><br><span class="line">            barWidth : <span class="number">5</span>,</span><br><span class="line">            stack: <span class="string">'搜索引擎'</span>,</span><br><span class="line">            data:[<span class="number">620</span>, <span class="number">732</span>, <span class="number">701</span>, <span class="number">734</span>, <span class="number">1090</span>, <span class="number">1130</span>, <span class="number">1120</span>]</span><br><span class="line">        &#125;,</span><br><span class="line">    ]</span><br><span class="line">&#125;;</span><br><span class="line">&#123;% endecharts %&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><font size="3">其中，参数400指定图表展示的高度为400px，81%则指定图表展示的宽度为81%，如不写明这两项参数则默认值为高度400px，宽度81%。</font>
-
-</li>
-</ul>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://kchen.cc/2016/11/05/echarts-in-hexo/" target="_blank" rel="noopener">在 Hexo 中插入 ECharts 动态图表</a><br><a href="https://www.jianshu.com/p/8ae0d3b734ed" target="_blank" rel="noopener">Hexo驱动博客中使用Echarts动态图表</a></p>
-
-		<hr/>
         
-       
+          <a class="article-more-a" href="/posts/16107/#more">更多 >></a>
+        
       
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>如果您觉得本文对你有帮助，您可以小小的支持一下.<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/alipay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/img/weixin.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -472,15 +325,7 @@ tooltip : {
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">记录</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">教程</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Hexo博客</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
         		</li>
       		
 		</ul>
@@ -489,58 +334,11 @@ tooltip : {
       
 
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/posts/16107/">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://www.gzx97.top/posts/54640/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
@@ -549,27 +347,6 @@ tooltip : {
       <div style="text-align:center;color: #ccc;font-size:14px;">-----------  本文结束，<i class="fa fa-paw"></i>感谢您的阅读  -----------</div>
 	</div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/posts/24249/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          四月裂帛 4.6-4.26
-        
-      </div>
-    </a>
-  
-  
-    <a href="/posts/fac744e1/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">四月，你好</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -590,15 +367,11 @@ tooltip : {
 
 
 
-
   
   
-  
-
-  
-
-  
-
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
   
 
 
@@ -626,8 +399,8 @@ tooltip : {
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
-		isPost: true,
+		isHome: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
