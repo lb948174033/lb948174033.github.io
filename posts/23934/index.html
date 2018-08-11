@@ -8,7 +8,7 @@
   <link rel="dns-prefetch" href="http://www.gzx97.top">
   <title>Windows系统的优化 | 公子笑的主站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="目前正努力学习前端、JAVA、Python、Android...">
+  <meta name="description" content="正努力学习前端、JAVA、Python、Android...">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
   <style>
@@ -212,6 +212,8 @@ $(function() {
     			
             
     			
+    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+    			
             
 		</nav>
 		<nav class="header-nav">
@@ -222,6 +224,10 @@ $(function() {
 					<a class="weibo" target="_blank" href="https://weibo.com/liangben0726" title="weibo"><i class="icon-weibo"></i></a>
 		        
 					<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=948174033&site=qq&menu=yes" title="qq"><i class="icon-qq"></i></a>
+		        
+					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/gong-zi-xiao-40/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+		        
+					<a class="bilibili" target="_blank" href="https://space.bilibili.com/14237824/#/" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 			</div>
 		</nav>
@@ -267,6 +273,10 @@ $(function() {
 						<a class="weibo" target="_blank" href="https://weibo.com/liangben0726" title="weibo"><i class="icon-weibo"></i></a>
 			        
 						<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=948174033&site=qq&menu=yes" title="qq"><i class="icon-qq"></i></a>
+			        
+						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/gong-zi-xiao-40/activities" title="zhihu"><i class="icon-zhihu"></i></a>
+			        
+						<a class="bilibili" target="_blank" href="https://space.bilibili.com/14237824/#/" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
 				</div>
 			</nav>
@@ -693,6 +703,8 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
     
       
+      
+      
     
     
 
@@ -700,11 +712,13 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">文章搜索</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">文章搜索</a></li>
       
         
       
         
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -788,6 +802,12 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
 
+    
+    	<section class="tools-section tools-section-me" q-show="aboutme">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">正努力学习前端、JAVA、Python、Android...</div>
+  	  	
+    	</section>
     
   </div>
   
