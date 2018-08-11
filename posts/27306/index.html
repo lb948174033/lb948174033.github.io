@@ -8,10 +8,10 @@
   <link rel="dns-prefetch" href="http://www.gzx97.top">
   <title>不一样的壁纸（一） | 公子笑的主站</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="年轻无为，卖马为生。目前正努力学习前端、JAVA、Python、Android...">
+  <meta name="description" content="目前正努力学习前端、JAVA、Python、Android...">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
-    <style>
+  <style>
     .pace .pace-progress {
         background: #1087ca; /*进度条颜色*/
         height: 2px;
@@ -199,7 +199,7 @@ $(function() {
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/archives">文章</a></li>
+				<li><a href="/archives">归档</a></li>
 	        
 				<li><a href="/movies">动漫</a></li>
 	        
@@ -215,8 +215,6 @@ $(function() {
             
     			
             
-    			
-    			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
 		</nav>
@@ -283,7 +281,7 @@ $(function() {
 				
 					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 25%"><a href="/archives">文章</a></li>
+					<li style="width: 25%"><a href="/archives">归档</a></li>
 		        
 					<li style="width: 25%"><a href="/movies">动漫</a></li>
 		        
@@ -577,8 +575,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
     
       
-      
-      
     
     
 
@@ -586,13 +582,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">文章搜索</a></li>
+      <li style="width: 100%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">文章搜索</a></li>
       
         
       
         
-      
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -676,12 +670,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
     
 
-    
-    	<section class="tools-section tools-section-me" q-show="aboutme">
-  	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">余生请多指教</div>
-  	  	
-    	</section>
     
   </div>
   
